@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "instrumentation_callbacks", "instrumentation_callbacks\instrumentation_callbacks.vcxproj", "{1E0E29D4-3AB4-4066-8261-2B9314128E3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E0E29D4-3AB4-4066-8261-2B9314128E3E}.Debug|x64.ActiveCfg = Debug|x64
+		{1E0E29D4-3AB4-4066-8261-2B9314128E3E}.Debug|x64.Build.0 = Debug|x64
+		{1E0E29D4-3AB4-4066-8261-2B9314128E3E}.Release|x64.ActiveCfg = Release|x64
+		{1E0E29D4-3AB4-4066-8261-2B9314128E3E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4115140C-3F8C-479B-9D0A-7CEDE8DC6320}
+	EndGlobalSection
+EndGlobal
