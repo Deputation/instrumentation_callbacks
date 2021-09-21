@@ -24,25 +24,6 @@ struct process_instrumentation_callback_info_t {
 };
 
 /// <summary>
-/// Structure representing registers pushed into the stack by the instrumentation callback.
-/// </summary>
-struct registers_t {
-  void* rax;
-  void* rcx;
-  void* rbx;
-  void* rbp;
-  void* rdi;
-  void* rsi;
-  void* rsp;
-  void* r10;
-  void* r11;
-  void* r12;
-  void* r13;
-  void* r14;
-  void* r15;
-};
-
-/// <summary>
 /// TLS index used to store thread specific information.
 /// </summary>
 extern DWORD tls_index;
