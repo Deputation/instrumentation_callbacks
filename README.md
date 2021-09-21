@@ -1,7 +1,9 @@
 ## instrumentation_callbacks
-Instrumentation callbacks are quite a fun undocumented part of Windows.\n
-All the code in this repository is released under the MIT license.\n
+Instrumentation callbacks are quite a fun undocumented part of Windows.
+All the code in this repository is released under the MIT license.
 This repository uses google style C++.
+
+PRs are welcome if you find issues, bugs, or believe a specific feature should be added.
 
 # What are they?
 Instrumentation callbacks will let you handle all syscalls (and exceptions!) dispatched by a process on which you placed a callback. 
