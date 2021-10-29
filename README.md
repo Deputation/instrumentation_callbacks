@@ -20,7 +20,7 @@ One solution to this problem could be setting a flag to true/false that enables 
 
 This, however, will let most syscalls seep through.
 
-This repository, instead, solves the issue of not being able to issue syscalls inside a callback by setting a TLS-dependent variable, making sure we handle **all** syscalls from all threads while being able to call them ourselves, the only syscalls we'll miss are the ones we'll issue from inside the callback, which (in most situations) we arguably don't care about.
+This repository, instead, solves the issue of not being able to issue syscalls inside a callback by setting a TLS-dependent variable, making sure we handle **all** syscalls from all threads while being able to call them ourselves, the only syscalls we'll miss are the ones we'll issue from inside the callback, which (in most situations, such as ones in which we're analyzing software) we arguably don't care about.
 
 ## Hypothetical uses.
 Instrumentation callbacks have a lot of possible uses, one of them could be for anti-cheating purposes, you could analyze syscalls coming from the process, and determine whether they come from an illegitimate address space or are being used for nefarious purposes without needing to fill system DLLs with bytepatches and hooks.
