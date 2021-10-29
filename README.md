@@ -11,6 +11,10 @@ Instrumentation callbacks will let you handle all syscalls (and exceptions!) dis
 ## The problem with callbacks.
 Of course, every syscall will be caught, so while the callback is executing you normally shouldn't issue any more syscalls inside it unless you want to end up recursing forever.
 
+This would limit greatly what you can do inside the callback, or at least pose some sort of design challenge, but in the next paragraph you'll see a fairly elegant solution to the problem.
+
+It is not flawless, since an eventual attacker can purposefully set the variable to disable the callback, but it's near perfect for analysis purposes.
+
 ## The possible solution(s).
 One solution to this problem could be setting a flag to true/false that enables and disables the callback's analysis capabilities, essentially letting every syscall through if another syscall is already being handled.
 
