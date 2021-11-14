@@ -1,7 +1,7 @@
 # instrumentation_callbacks
 Instrumentation callbacks are quite a fun undocumented part of Windows.
 All the code in this repository is released under the MIT license.
-This repository uses google style C++.
+This repository uses google style C++ spacing.
 
 PRs are welcome if you find issues, bugs, or believe a specific feature should be added.
 
